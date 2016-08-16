@@ -1,3 +1,4 @@
 #Ignoring the node_module plugins for React
 node_modules/
+.DS_Store
 
