@@ -17,7 +17,7 @@ var Weather = React.createClass({
 		var that = this;
 
 		this.setState({isLoading: true});
-		
+		that.setState({isError: false});
 
 		openWeatherMap.getTemp(location).then(function(temp){
 			that.setState({
@@ -35,15 +35,6 @@ var Weather = React.createClass({
 		var isLoading = this.state.isLoading;
 		var isError = this.state.isError;
 
-		/*function renderMessage(){
-			while(isLoading===true){
-				if(temp===undefined && location===undefined){
-					return <Loading/>
-				}else if(temp!=undefined && location!=undefined){
-					return <WeatherMsg location={location} temp={temp}/>;
-				}
-			}
-		}*/
 		function renderMessage(){
 			if(isError===true){
 				return <ErrorMessage/>;
@@ -53,7 +44,6 @@ var Weather = React.createClass({
 				return <WeatherMsg location={location} temp={temp}/>;
 			}
 		}
-
 
 		return(
 			<div>
