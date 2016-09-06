@@ -6,8 +6,8 @@ var Nav = () => {
 		<div>
 			<h2>Nav Component</h2>
 			<IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Get Weather</IndexLink>
-			<Link to="/about" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>About 1</Link>
-			<Link to="/examples" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Examples 2</Link>
+			<Link to="/about" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>About</Link>
+			<Link to="/examples" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Examples</Link>
 		</div>
 	);
 }
