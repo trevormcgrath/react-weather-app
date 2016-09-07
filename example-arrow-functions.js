@@ -33,7 +33,7 @@ names.forEach( (name) => console.log(name) );
 
 person.greet();*/
 
-function add (a, b){
+function sum (a, b){
 	return a+b;
 }
 
@@ -43,7 +43,7 @@ var addstatement = (a,b)=>{
 }
 
 //addExpression
-var addExpression = (a,b) => a+b;
+var sum = (a,b) => a+b;
 
 console.log(addExpression(2,6));
 
